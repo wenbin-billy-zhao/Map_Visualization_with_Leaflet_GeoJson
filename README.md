@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## Welcome to Billy Zhao's Project GitHub Pages
+### Project: USGS Daily Earthquake Info Map
+#### Using Leaflet.js Javascript Library and MapBox API
 
-You can use the [editor on GitHub](https://github.com/wenbin-billy-zhao/Map_Visualization_with_Leaflet_GeoJson/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Web App URL: [Web App URL](https://wenbin-billy-zhao.github.io/Map_Visualization_with_Leaflet_GeoJson/) : https://wenbin-billy-zhao.github.io/Map_Visualization_with_Leaflet_GeoJson/
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![screenshot](screen.gif)
 
-### Markdown
+### Part1 | Building MapBox API Map Layers with Color Themes
+Create a map using Leaflet that plots all of the earthquakes from your data set based on their longitude and latitude.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### Part 2 | Add Earthquake Information from USGS API Data Source
 
-# Header 1
-## Header 2
-### Header 3
+The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page and pick a data set to visualize. When you click on a data set, for example 'All Earthquakes from the Past 7 Days', you will be given a JSON representation of that data. You will be using the URL of this JSON to pull in the data for our visualization.
 
-- Bulleted
-- List
+### Part 3 | Add USGS Tectonic Plate fault line info
+The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it along side your original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
 
-1. Numbered
-2. List
+### Part 4 | Add legend, map layer selection and controls
 
-**Bold** and _Italic_ and `Code` text
+* Plot a second data set on our map.
 
-[Link](url) and ![Image](src)
-```
+* Add a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wenbin-billy-zhao/Map_Visualization_with_Leaflet_GeoJson/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Add layer controls to our map.
