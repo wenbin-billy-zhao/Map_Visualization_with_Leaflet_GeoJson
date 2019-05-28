@@ -93,7 +93,7 @@ function buildMarker(features) {
             color: color,
             weight: 0.8,
             radius: markerSize(mag)
-        }).bindPopup('<h1>Earthquake Site: </h1><h2>' + feature.properties.place + '<hr>Magnitude: ' + mag + '</h2><h3>Date:' + Date(feature.properties.time) + '</h3>')
+        }).bindPopup('<h1>Earthquake Site: </h1><h2>' + feature.properties.place + '<hr>Magnitude: ' + mag + '</h2><h3>Date:' + new Date(feature.properties.time) + '</h3>')
         .addTo(layers.earthquakeLayer)
     });
 }
