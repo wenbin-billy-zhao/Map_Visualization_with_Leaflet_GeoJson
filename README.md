@@ -6,7 +6,7 @@ Web App URL: [Web App URL](https://wenbin-billy-zhao.github.io/Map_Visualization
 
 ![screenshot](screen.gif)
 
-### Part1 | Building MapBox API Map Layers with Color Themes
+### Part 1 | Building MapBox API Map Layers with Color Themes
 Create a map using Leaflet that plots all of the earthquakes from your data set based on their longitude and latitude.
 
 
